@@ -1,0 +1,74 @@
+{
+  "projectName": "ProdReadyReactDotNetEcommerce",
+  "projectOverview": "Production-ready e-commerce web app with React front-end and .NET back-end supporting robust cart operations.",
+  "techStackId": 80,
+  "projectId": 380,
+  "requirements": [
+    {
+      "id": 831,
+      "description": "Build product listing, detail views, and filters using React with responsive layout for production use.",
+      "codeExample": null,
+      "header": "Implement product catalog UI",
+      "isOptional": false,
+      "techStackId": 80,
+      "paths": [
+        "**/src/features/catalog/**",
+        "**/src/ui/catalog/**"
+      ],
+      "patterns": null,
+      "projectId": 380
+    },
+    {
+      "id": 832,
+      "description": "Create React cart UI to add, remove, and update items with real-time price calculations.",
+      "codeExample": null,
+      "header": "Implement cart management UI",
+      "isOptional": false,
+      "techStackId": 80,
+      "paths": [
+        "**/src/features/cart/**",
+        "**/src/ui/cart/**"
+      ],
+      "patterns": null,
+      "projectId": 380
+    },
+    {
+      "id": 833,
+      "description": "Set up React router and centralized state for catalog, cart, and user session handling.",
+      "codeExample": null,
+      "header": "Configure global state and routing",
+      "isOptional": false,
+      "techStackId": 80,
+      "paths": [
+        "**/src/app/store/**",
+        "**/src/app/routing/**"
+      ],
+      "patterns": null,
+      "projectId": 380
+    }
+  ],
+  "projectApplicationId": 329,
+  "currentWorkingProject": "https://github.com/he1snber8/Bitasmbl-hallo-380_b88_329",
+  "domains": [
+    {
+      "name": "FrontEnd",
+      "tech": [
+        "React",
+        ".NET"
+      ],
+      "initializedLocally": true,
+      "repo": "https://github.com/he1snber8/Bitasmbl-hallo-380_b88_329",
+      "localPath": "/Users/lukakhaja/TEST-26/Bitasmbl-hallo-380_b88_329"
+    },
+    {
+      "name": "BackEnd",
+      "tech": [
+        "React",
+        ".NET"
+      ],
+      "initializedLocally": false,
+      "repo": "",
+      "localPath": ""
+    }
+  ]
+}
