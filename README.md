@@ -1,17 +1,21 @@
-# Bitasmbl Project
+# Quickstart for Bitasmbl project (React)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/.NET-8.0-blue" />
-  <img src="https://img.shields.io/badge/status-generated-success" />
-</p>
-
-## Quick Start
+## 1) Install Bitasmbl-CLI package
 
 ```bash
-git clone {{RepoUrl}}
-cd {{RepoName}}
-dotnet restore
-dotnet run
+npm i bitasmbl-cli
+```
+
+## 2) Run bitasmbl command to set up the project
+
+```bash
+bitasmbl pull --repoUrl https://github.com/he1snber8/Bitasmbl-hallo-380_b88_329 --appId 329 --repoId 123
+```
+
+## 3) Enter into the main directory and start coding!
+
+```bash
+cd project-repo-123
 ```
 
 ## Environment
