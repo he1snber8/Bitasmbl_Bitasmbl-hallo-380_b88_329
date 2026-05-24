@@ -58,15 +58,15 @@ bitasmbl evaluate
 
 Example output:
 
-```console
+<pre >
 ? Available Requirements:
 
-❯ [1] Define portfolio layout              [3]
+❯ [<span style="color:#9333ea">1</span>] <span style="color:#9333ea"> Define portfolio layout </span>            [3]
   [2] Build showcase components            [3]
   [3] Implement navigation routing         [3]
   [4] Add content configuration            [2]
   [5] Style and interaction design         [3]
-```
+</pre>
 
 `[x]` on the right represents the number of submission attempts remaining for a requirement.
 
@@ -78,8 +78,43 @@ Example output:
 ## Example Component
 
 ```tsx
-export default function App() {
-  return <h1>Hello from Bitasmbl</h1>;
+/*
+|--------------------------------------------------------------------------
+| BITASMBL EVALUATION
+|--------------------------------------------------------------------------
+| SCORE: 5/100
+| STATUS: FAIL ✕
+|
+| INSIGHT:
+| Missing semantic structure and responsive layout.
+|
+| SUGGESTED PATH:
+| frontend/src/pages/MainPage.tsx
+|--------------------------------------------------------------------------
+*/
+
+export default function MainPage() {
+  return (
+    <main className="max-w-4xl mx-auto p-4 md:grid md:gap-8">
+      <nav className="flex justify-between items-center py-6">
+        <Logo />
+
+        <ul className="flex gap-4">
+          <li>
+            <a href="#work">My Work</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section id="hero" className="min-h-[60vh] flex items-center">
+        <h1 className="text-4xl font-bold">Hello world!</h1>
+      </section>
+
+      <footer className="mt-auto py-8 border-t text-sm opacity-60">
+        <p>{new Date().getFullYear()} Evaluated by Bitasmbl</p>
+      </footer>
+    </main>
+  );
 }
 ```
 
