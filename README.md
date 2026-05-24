@@ -75,7 +75,7 @@ Example output:
 - Failed evaluations decrease remaining attempts
 - When attempts reach `0`, no further submissions are allowed
 
-## Example Component
+## Example evaluation result
 
 ```tsx
 /*
@@ -87,13 +87,15 @@ Example output:
 |
 | INSIGHT:
 | Missing semantic structure and responsive layout.
-|
-| SUGGESTED PATH:
+|  
+|  SUGGESTIONS:
+| - rename mainpage → MainPage (React component convention)
+| 
 | frontend/src/pages/MainPage.tsx
 |--------------------------------------------------------------------------
 */
 
-export default function MainPage() {
+export default function mainpage() {
   return (
     <main className="max-w-4xl mx-auto p-4 md:grid md:gap-8">
       <nav className="flex justify-between items-center py-6">
@@ -118,13 +120,8 @@ export default function MainPage() {
 }
 ```
 
-<details>
-<summary>Available commands</summary>
+## Learn More
 
-```bash
-dotnet build
-dotnet test
-dotnet watch run
-```
+For complete command references, workflow explanations, and additional documentation, visit:
 
-</details>
+👉 [Bitasmbl Documentation](https://bitasmbl.com/docs)
