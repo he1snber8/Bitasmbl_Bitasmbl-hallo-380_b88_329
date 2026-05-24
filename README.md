@@ -36,6 +36,21 @@ Create an `appsettings.Development.json` file:
 └── .gitignore
 ```
 
+## Quick Start
+
+```bash
+npm install
+npm run dev
+```
+
+## Example Component
+
+```tsx
+export default function App() {
+  return <h1>Hello from Bitasmbl</h1>;
+}
+```
+
 <details>
 <summary>Available commands</summary>
 
