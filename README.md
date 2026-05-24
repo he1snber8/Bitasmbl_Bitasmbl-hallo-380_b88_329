@@ -58,7 +58,7 @@ bitasmbl evaluate
 
 Example output:
 
-<pre >
+<pre>
 ? Available Requirements:
 
 ❯ [<span style="color:#9333ea">1</span>] <span style="color:#9333ea"> Define portfolio layout </span>            [3]
