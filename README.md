@@ -124,4 +124,4 @@ export default function mainpage() {
 
 For complete command references, workflow explanations, and additional documentation, visit:
 
-👉 [Bitasmbl Documentation](https://bitasmbl.com/docs)
+👉 [Bitasmbl Documentation](http://localhost:3000/bitasmbl-cli/about)
