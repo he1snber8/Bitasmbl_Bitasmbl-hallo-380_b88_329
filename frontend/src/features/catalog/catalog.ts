@@ -5,4 +5,5 @@ interface dummy {
   age: number;
   weatthetop: string;
   what: string;
+  start: boolean;
 }

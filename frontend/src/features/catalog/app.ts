@@ -3,4 +3,5 @@ interface Catalog {
   length: number;
   notaroundme: boolean;
   dontknow: boolean;
+  walkitlikeitalkit: true;
 }
