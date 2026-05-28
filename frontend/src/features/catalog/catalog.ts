@@ -3,4 +3,5 @@ interface dummy {
   surname: string;
   huh?: string;
   age: number;
+  weatthetop: string;
 }
