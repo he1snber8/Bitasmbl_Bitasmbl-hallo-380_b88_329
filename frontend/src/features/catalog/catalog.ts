@@ -6,4 +6,5 @@ interface dummy {
   weatthetop: string;
   what: string;
   start: boolean;
+  samecolorTshirt: boolean;
 }

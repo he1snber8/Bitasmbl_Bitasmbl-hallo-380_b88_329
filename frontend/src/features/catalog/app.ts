@@ -4,4 +4,5 @@ interface Catalog {
   notaroundme: boolean;
   dontknow: boolean;
   walkitlikeitalkit: true;
+  mama: "love" | "sunshine";
 }
