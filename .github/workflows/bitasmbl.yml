@@ -19,7 +19,7 @@ jobs:
           git config user.name "he1snber8"
           git config user.email "lukakhajavelidze@yahoo.com"
           git add .
-       
+
           if [ -n "$(git status --porcelain)" ]; then
             git commit -m "bitasmbl: scaffold project"
             git push
@@ -64,7 +64,7 @@ jobs:
 
       - name: Send to backend
         run: |
-          curl -X POST https://2073-176-221-143-53.ngrok-free.app/projects/evaluate-code-diff \
+          curl -X POST https://e48f-176-221-143-53.ngrok-free.app/projects/evaluate-code-diff \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ${{ secrets.BITASMBL_TOKEN }}" \
             -d @- <<EOF

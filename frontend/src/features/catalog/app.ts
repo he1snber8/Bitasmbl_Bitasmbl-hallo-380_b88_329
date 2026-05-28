@@ -1,11 +1,1 @@
-// haha
-// haha
-// haha
-// haha
-// haha
-// haha
-// haha
-// haha
-// haha
-// haha
-// haha
+interface Catalog {}
