@@ -4,4 +4,5 @@ interface dummy {
   huh?: string;
   age: number;
   weatthetop: string;
+  what: string;
 }
