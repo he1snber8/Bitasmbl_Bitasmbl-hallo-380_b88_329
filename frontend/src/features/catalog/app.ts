@@ -1,1 +1,3 @@
-interface Catalog {}
+interface Catalog {
+  name: string;
+}
