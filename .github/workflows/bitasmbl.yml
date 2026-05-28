@@ -65,16 +65,21 @@ jobs:
 
       - name: Send to backend
         run: |
+          # Use a heredoc with quotes to prevent shell mangling
+          # and ensure we aren't double-quoting the diff string
+          cat <<'EOF' > payload.json
+          {
+            "projectApplicationId": "${{ steps.meta.outputs.project_application_id }}",
+            "requirementId": "${{ steps.meta.outputs.requirement_id }}",
+            "repo": "${{ github.repository }}",
+            "commitSha": "${{ github.sha }}",
+            "diffs": ${{ steps.diff.outputs.diff }},
+            "activityMeta": ${{ steps.meta.outputs.activity_data }}
+          }
+          EOF
+        
           curl -X POST https://e48f-176-221-143-53.ngrok-free.app/projects/evaluate-code-diff \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ${{ secrets.BITASMBL_TOKEN }}" \
-            -d @- <<EOF
-          {
-            "projectApplicationId": ${{ steps.meta.outputs.project_application_id }},
-            "requirementId": ${{ steps.meta.outputs.requirement_id }},
-            "repo": "${{ github.repository }}",
-            "commitSha": "${{ github.sha }}",
-            "diffs": ${{ steps.diff.outputs.diff }}
-          }
-          EOF
+            -d @payload.json
           
